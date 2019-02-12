@@ -52,4 +52,20 @@
         text-align: right;
     }
 
-.gbooks {}
+.gbook {
+    margin: 1.25rem 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+.gbook > li:first-child {
+    color: orange;
+    font-weight: bold;
+}
+.gbook > li:nth-child(2) {
+    color:rgb(15,49,70);
+    border: 1px solid #fff;
+    font-size:1.5rem;
+}

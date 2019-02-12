@@ -1,105 +1,25 @@
-[debug] [2019-02-12T00:20:22.816Z] ----------------------------------------------------------------------
-[debug] [2019-02-12T00:20:22.818Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sungje.kim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
-[debug] [2019-02-12T00:20:22.819Z] CLI Version:   6.3.1
-[debug] [2019-02-12T00:20:22.819Z] Platform:      win32
-[debug] [2019-02-12T00:20:22.819Z] Node Version:  v10.15.1
-[debug] [2019-02-12T00:20:22.821Z] Time:          Tue Feb 12 2019 09:20:22 GMT+0900 (GMT+09:00)
-[debug] [2019-02-12T00:20:22.821Z] ----------------------------------------------------------------------
+[debug] [2019-02-12T05:15:59.119Z] ----------------------------------------------------------------------
+[debug] [2019-02-12T05:15:59.122Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sungje.kim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-02-12T05:15:59.122Z] CLI Version:   6.3.1
+[debug] [2019-02-12T05:15:59.122Z] Platform:      win32
+[debug] [2019-02-12T05:15:59.122Z] Node Version:  v10.15.1
+[debug] [2019-02-12T05:15:59.125Z] Time:          Tue Feb 12 2019 14:15:59 GMT+0900 (GMT+09:00)
+[debug] [2019-02-12T05:15:59.125Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-02-12T00:20:22.830Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-02-12T00:20:22.831Z] > authorizing via signed-in user
-[debug] [2019-02-12T00:20:22.831Z] [iam] checking project afko-gbook for permissions ["firebase.projects.get"]
-[debug] [2019-02-12T00:20:22.832Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/afko-gbook:testIamPermissions  
+[debug] [2019-02-12T05:15:59.138Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-12T05:15:59.139Z] > authorizing via signed-in user
+[debug] [2019-02-12T05:15:59.139Z] [iam] checking project afko-gbook for permissions ["firebase.projects.get"]
+[debug] [2019-02-12T05:15:59.141Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/afko-gbook:testIamPermissions  
 
-[debug] [2019-02-12T00:20:24.141Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-12T00:20:24.143Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/afko-gbook  
+[debug] [2019-02-12T05:16:00.462Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-12T05:16:00.464Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/afko-gbook  
  
-[debug] [2019-02-12T00:20:25.385Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-12T05:16:01.704Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from 'C:\afko\gbook'...
 [info] 
-[debug] [2019-02-12T00:20:25.388Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/769455268887/clients/_:getWebAppConfig  
+[debug] [2019-02-12T05:16:01.708Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/769455268887/clients/_:getWebAppConfig  
  
-[debug] [2019-02-12T00:20:26.491Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-[debug] [2019-02-12T00:46:02.015Z] ----------------------------------------------------------------------
-[debug] [2019-02-12T00:46:02.017Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sungje.kim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
-[debug] [2019-02-12T00:46:02.017Z] CLI Version:   6.3.1
-[debug] [2019-02-12T00:46:02.018Z] Platform:      win32
-[debug] [2019-02-12T00:46:02.018Z] Node Version:  v10.15.1
-[debug] [2019-02-12T00:46:02.020Z] Time:          Tue Feb 12 2019 09:46:02 GMT+0900 (GMT+09:00)
-[debug] [2019-02-12T00:46:02.020Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2019-02-12T00:46:02.029Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-02-12T00:46:02.030Z] > authorizing via signed-in user
-[debug] [2019-02-12T00:46:02.030Z] [iam] checking project afko-gbook for permissions ["firebase.projects.get"]
-[debug] [2019-02-12T00:46:02.032Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/afko-gbook:testIamPermissions  
-
-[debug] [2019-02-12T00:46:03.386Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-12T00:46:03.387Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/afko-gbook  
- 
-[debug] [2019-02-12T00:46:04.622Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\afko\gbook'...
-[info] 
-[debug] [2019-02-12T00:46:04.626Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/769455268887/clients/_:getWebAppConfig  
- 
-[debug] [2019-02-12T00:46:05.755Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-[debug] [2019-02-12T04:32:53.492Z] ----------------------------------------------------------------------
-[debug] [2019-02-12T04:32:53.494Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sungje.kim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
-[debug] [2019-02-12T04:32:53.494Z] CLI Version:   6.3.1
-[debug] [2019-02-12T04:32:53.494Z] Platform:      win32
-[debug] [2019-02-12T04:32:53.494Z] Node Version:  v10.15.1
-[debug] [2019-02-12T04:32:53.497Z] Time:          Tue Feb 12 2019 13:32:53 GMT+0900 (GMT+09:00)
-[debug] [2019-02-12T04:32:53.497Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2019-02-12T04:32:53.507Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-02-12T04:32:53.507Z] > authorizing via signed-in user
-[debug] [2019-02-12T04:32:53.507Z] [iam] checking project afko-gbook for permissions ["firebase.projects.get"]
-[debug] [2019-02-12T04:32:53.509Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2019-02-12T04:32:53.510Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2019-02-12T04:32:53.868Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-12T04:32:53.873Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/afko-gbook:testIamPermissions  
-
-[debug] [2019-02-12T04:32:55.110Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-12T04:32:55.111Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/afko-gbook  
- 
-[debug] [2019-02-12T04:32:56.313Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\afko\gbook'...
-[info] 
-[debug] [2019-02-12T04:32:56.317Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/769455268887/clients/_:getWebAppConfig  
- 
-[debug] [2019-02-12T04:32:57.134Z] <<< HTTP RESPONSE 200
-[warn] !  hosting: Port 5000 is not available. Trying another port...
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5005
-[debug] [2019-02-12T04:33:11.749Z] ----------------------------------------------------------------------
-[debug] [2019-02-12T04:33:11.751Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sungje.kim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
-[debug] [2019-02-12T04:33:11.752Z] CLI Version:   6.3.1
-[debug] [2019-02-12T04:33:11.752Z] Platform:      win32
-[debug] [2019-02-12T04:33:11.752Z] Node Version:  v10.15.1
-[debug] [2019-02-12T04:33:11.754Z] Time:          Tue Feb 12 2019 13:33:11 GMT+0900 (GMT+09:00)
-[debug] [2019-02-12T04:33:11.754Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2019-02-12T04:33:11.764Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-02-12T04:33:11.765Z] > authorizing via signed-in user
-[debug] [2019-02-12T04:33:11.765Z] [iam] checking project afko-gbook for permissions ["firebase.projects.get"]
-[debug] [2019-02-12T04:33:11.766Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/afko-gbook:testIamPermissions  
-
-[debug] [2019-02-12T04:33:13.013Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-12T04:33:13.015Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/afko-gbook  
- 
-[debug] [2019-02-12T04:33:14.225Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\afko\gbook'...
-[info] 
-[debug] [2019-02-12T04:33:14.227Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/769455268887/clients/_:getWebAppConfig  
- 
-[debug] [2019-02-12T04:33:14.838Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-12T05:16:02.539Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
