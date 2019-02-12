@@ -38,13 +38,15 @@ auth.onAuthStateChanged(function (result) {
     $("#login_bt").hide();
     $("#logout_bt").show();
     $("#user_email").html(email);
+    $("#content").attr("disabled", false);
     init();
-    
+
   } else {
     user = null;
     $("#login_bt").show();
     $("#logout_bt").hide();
     $("#user_email").html('');
+    $("#content").attr("disabled", true);
     init();
   }
 }); // 이벤트에 callback을 붙인다.
@@ -57,6 +59,7 @@ function init() {
 
   ref = db.ref("root/gbook"); // root에 있는 gbook, 객체를 생성한 instance가 ref에 담긴 것.
   // log("ref1: " + ref);
+  ref.off(); // reference에 붙어 있는 이벤트 삭제
   ref.on("child_added", onAdd); // child_added는 firebase에서 만들어놓은 event, ref의 데이터가 추가 된다면 실행
   // log("callback 대기중")
 
@@ -72,7 +75,7 @@ function onAdd(data) {
   var k = data.key;
   var v = data.val();
 
-   // 날짜 커스텀
+  // 날짜 커스텀
   var date = tsChg(v.wdate);
 
   // 내가 쓴 글 찾기
@@ -91,7 +94,7 @@ function onAdd(data) {
   html += '</ul>';
 
   $(".gbooks").prepend(html);
-  
+
 
   // log("callback 실행")
   // log(data);
@@ -115,7 +118,7 @@ function zeroAdd(n) {
   else return n;
 }
 
-function tsChg(ts){
+function tsChg(ts) {
   var d = new Date(ts);
   var month = ["1월 ", "2월 ", "3월 ", "4월 ", "5월 ", "6월 ", "7월 ", "8월 ", "9월 ", "10월 ", "11월 ", "12월 "];
   var day = ["월", "화", "수", "목", "금", "토", "일"];
@@ -136,8 +139,12 @@ ref.push({ // insert
 $("#save_bt").on("click", function () {
   var $content = $("#content");
   if ($content.val() == "") {
-    alert("내용을 입력하세요.");
-    $content.focus();
+    if (user == null) {
+      alert("Please Login.");
+    } else if (user) {
+      alert("Please enter the message.");
+      $content.focus();
+    }
   } else {
     ref = db.ref("root/gbook/");
     ref.push({
@@ -182,5 +189,35 @@ function onDelete(obj) {
   key = $(obj).parent().parent().attr("id");
   if (confirm("Do you want to delete?")) {
     db.ref("root/gbook/" + key).remove(); // DB 삭제 remove
+  }
+}
+
+
+
+// enter키
+
+function enterkey() {
+  if (window.event.keyCode == 13) {
+
+    var $content = $("#content");
+    if ($content.val() == "") {
+      if (user == null) {
+        alert("Please Login.");
+      } else if (user) {
+        alert("Please enter the message.");
+        $content.focus();
+      }
+    } else {
+      ref = db.ref("root/gbook/");
+      ref.push({
+        email: user.email,
+        uid: user.uid,
+        uname: user.displayName,
+        content: $content.val(),
+        wdate: Date.now()
+      }).key;
+      $content.val('');
+    }
+
   }
 }
