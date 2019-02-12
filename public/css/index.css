@@ -66,6 +66,21 @@
 }
 .gbook > li:nth-child(2) {
     color:rgb(15,49,70);
-    border: 1px solid #fff;
-    font-size:1.5rem;
+    margin: 10px 0 ;
+    /* border: 1px solid ; */
+    /* line-height: 2.5rem; */
+    /* font-size:1.5rem; */
+}
+.gbook > li:last-child {
+   padding-top: 0.5rem;
+   float: right;
+}
+.gbook .fas{
+    color: #999;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.gbook .fas:hover{
+    color: orange;
 }

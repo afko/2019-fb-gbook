@@ -34,3 +34,11 @@ li {
 .img {
     width: 100%;
 }
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
